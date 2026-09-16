@@ -1,0 +1,50 @@
+body {
+    justify-content: center;
+    display: flex;
+    padding: 10% 10%;
+}
+
+main {
+    width: 40%;
+    border: solid black;
+    padding: 8px;
+    border-radius: 10%
+}
+
+button {
+    border-radius: 20%;
+}
+#display {
+    text-align: right;
+    background-color: cadetblue;
+    border: solid black 1px;
+    margin: 4px;
+    padding: 4px;
+
+}
+
+.grid_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    padding: 4px;
+}
+
+.grid_cards {
+    border: solid black 1px ;
+    text-align: center;
+    padding: 8px;
+
+}
+
+.grid_layout_exception {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    column-gap: 20px;
+    padding: 4px;
+}
+
+#button_equal{
+    grid-column: span 2;
+}
