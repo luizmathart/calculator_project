@@ -5,9 +5,9 @@ let second_number =''
 // uses the display content
 let display = window.document.getElementById('display')
 
-//---------------------fetches-the-first-and-second-number-and-puts-on-display-------------------
+//---------------------fetches-the-first-and-second-number-and-puts-on-display-------------
 
-//function to change the display innerText´s
+//function to change the display innerText´s and define variables
 function num_click(event) {
     let number_value = event.target.innerText
 
@@ -26,7 +26,7 @@ num_buttons.forEach(button => { // uses the const with all buttons
     button.addEventListener('click', num_click); //each button has a eventlistener now
 })
 
-//-----------------------fetches-the-operator-and-puts-on-display------------------------------
+//-----------------------fetches-the-operator-and-puts-on-display--------------------------
 
 function operation_click(event) {
     const operator_value = event.target.innerText
@@ -40,16 +40,24 @@ operation_buttons.forEach(button => {
     button.addEventListener('click', operation_click)
 })
 
-//----------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------
+
 const equal_button = window.document.getElementById('button_equal')
 
 equal_button.addEventListener('click', res)
 
 function res() {
+    parsed_first_number = parseInt(first_number)
+    parsed_second_number = parseInt(second_number)
+    switch(operator) {
+        case '+':
+            res = parsed_first_number + parsed_second_number
+            alert(res)
+            break
+    }
 
-    window.alert(first_number)
-    window.alert(operator)
-    window.alert(second_number)
+
+ 
 }
 
 
