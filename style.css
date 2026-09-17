@@ -20,7 +20,7 @@ button {
     border: solid black 1px;
     margin: 4px;
     padding: 4px;
-
+    height: 18px;
 }
 
 .grid_layout {
@@ -30,7 +30,7 @@ button {
     padding: 4px;
 }
 
-.grid_cards {
+div > button {
     border: solid black 1px ;
     text-align: center;
     padding: 8px;
