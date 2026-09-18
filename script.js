@@ -47,17 +47,27 @@ const equal_button = window.document.getElementById('button_equal')
 equal_button.addEventListener('click', res)
 
 function res() {
-    parsed_first_number = parseInt(first_number)
-    parsed_second_number = parseInt(second_number)
+    parsed_first_number = parseFloat(first_number)
+    parsed_second_number = parseFloat(second_number)
     switch(operator) {
         case '+':
             res = parsed_first_number + parsed_second_number
             alert(res)
             break
+        case '-':
+            res = parsed_first_number - parsed_second_number
+            alert(res)
+            break
+        case 'x':
+            res = parsed_first_number * parsed_second_number
+            alert(res)
+            break
+        case '/':
+            res = parsed_first_number/parsed_second_number
+            alert(res)
+            break
     }
-
-
- 
+     
 }
 
 
